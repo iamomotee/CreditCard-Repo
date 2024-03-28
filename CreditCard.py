@@ -48,7 +48,8 @@ input_var['PAY_AMT4'] = [pay_amt4]
 
 
 st.markdown("<br>", unsafe_allow_html= True) 
-st.subheader('Users Input Variables', divider= True)
+st.subheader('Users Input Variables')
+st.divider()
 st.dataframe(input_var)
 
 bill_amt1 = joblib.load('BILL_AMT1_scaler.pkl')

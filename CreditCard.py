@@ -11,7 +11,7 @@ st.markdown("<br>", unsafe_allow_html = True)
 
 st.image('Credit Card Defaulter.png')
 
-st.header('Project Background Information', divider = True)
+# st.header('Project Background Information', divider = True)
 st.write("The primary objective of a credit card defaulters predictive model is to accurately identify individuals or businesses who are at a high risk of defaulting on their credit card payments. By leveraging historical transaction data and customer information, the model aims to predict the likelihood of default before it occurs, enabling financial institutions to take proactive measures to mitigate risk and minimize potential losses.")
 
 st.markdown("<br>", unsafe_allow_html= True)
@@ -72,7 +72,7 @@ st.markdown("<br>", unsafe_allow_html= True)
 st.markdown("<br>", unsafe_allow_html= True)
 
 if st.button('Predict Credit'):
-    if predicted == -1:
+    if predicted == 0:
         st.failure('Customer Has DEFAULTED')
     else:
         st.success('Customer FULLY PAID')

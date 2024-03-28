@@ -26,7 +26,7 @@ st.sidebar.image('Card User.png', caption = 'Welcome User')
 st.sidebar.markdown("<br>", unsafe_allow_html= True)
 st.sidebar.markdown("<br>", unsafe_allow_html= True)
 
-st.sidebar.subheader('Input Variables', divider= True)
+# st.sidebar.subheader('Input Variables', divider= True)
 age = st.sidebar.selectbox('AGE', cs['AGE'].unique())
 bill_amt1 = st.sidebar.number_input('BILL_AMT1', cs['BILL_AMT1'].min(), cs['BILL_AMT1'].max())
 pay_amt6 = st.sidebar.number_input('PAY_AMT6', cs['PAY_AMT6'].min(), cs['PAY_AMT6'].max())
